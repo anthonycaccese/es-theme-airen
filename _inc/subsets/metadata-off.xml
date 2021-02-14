@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed">
+      <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/${system.theme}-gamelist-image.png</path>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/${system.theme}-gamelist-video.png</path>
+      </image>
+   </view>
+
+</theme>

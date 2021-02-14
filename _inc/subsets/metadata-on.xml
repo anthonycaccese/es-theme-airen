@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <view name="detailed,video">
+      <text name="md_lbl_genre">
+         <visible>true</visible>
+         <pos>0.5 0.76875</pos><!-- 240,246 -->
+         <size>0.270833333333333 0.0375</size><!-- 130,12 -->
+         <fontSize>0.028125</fontSize><!-- 9 -->
+         <text>Genre</text>
+      </text>
+      <text name="md_genre">
+         <visible>true</visible>
+         <pos>0.5 0.8125</pos><!-- 240,260 -->
+         <size>0.270833333333333 0.05</size><!-- 130,16 -->
+         <fontSize>0.03125</fontSize><!-- 10 -->
+      </text>
+      <text name="md_lbl_publisher">
+         <visible>true</visible>
+         <pos>0.5 0.875</pos><!-- 240,280 -->
+         <size>0.270833333333333 0.0375</size><!-- 130,12 -->
+         <fontSize>0.028125</fontSize><!-- 9 -->
+         <text>Publisher</text>
+      </text>
+      <text name="md_publisher">
+         <visible>true</visible>
+         <pos>0.5 0.91875</pos><!-- 240,294 -->
+         <size>0.270833333333333 0.05</size><!-- 130,16 -->
+         <fontSize>0.03125</fontSize><!-- 10 -->
+      </text>
+      <text name="md_lbl_rating">
+         <visible>true</visible>
+         <pos>0.791666666666667 0.76875</pos><!-- 380,246 -->
+         <size>0.166666666666667 0.0375</size><!-- 80,12 -->
+         <fontSize>0.028125</fontSize><!-- 9 -->
+         <text>Rating</text>
+      </text>
+      <rating name="md_rating">
+         <visible>true</visible>
+         <pos>0.791666666666667 0.8125</pos><!-- 380,260 -->
+         <size>0 0.046875</size>
+         <filledPath>./_inc/images/star-filled.svg</filledPath>
+         <unfilledPath>./_inc/images/star-empty.svg</unfilledPath>
+      </rating>
+      <text name="md_lbl_releasedate">
+         <visible>true</visible>
+         <pos>0.791666666666667 0.875</pos><!-- 380,280 -->
+         <size>0.166666666666667 0.0375</size><!-- 80,12 -->
+         <fontSize>0.028125</fontSize><!-- 9 -->
+         <text>Released</text>
+      </text>
+      <datetime name="md_releasedate">
+         <visible>true</visible>
+         <pos>0.791666666666667 0.91875</pos><!-- 380,294 -->
+         <size>0.166666666666667 0.05</size><!-- 80,16 -->
+         <fontSize>0.03125</fontSize><!-- 10 -->
+      </datetime>
+   </view>
+
+   <view name="detailed">
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.729166666666667 0.40625</pos><!-- 350,130 -->
+         <maxSize>0.416666666666667 0.625</maxSize><!-- 200,200 -->
+      </image>
+      <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/${system.theme}-gamelist-image.png</path>
+      </image>
+   </view>
+
+   <view name="video">
+      <text name="md_lbl_genre">
+         <pos>0.5 0.875</pos><!-- 240,280 -->
+      </text>
+      <text name="md_genre">
+         <pos>0.5 0.91875</pos><!-- 240,294 -->
+      </text>
+      <text name="md_lbl_publisher">
+         <visible>false</visible>
+      </text>
+      <text name="md_publisher">
+         <visible>false</visible>
+      </text>
+      <image name="md_image">
+         <visible>true</visible>
+         <origin>0 1</origin>
+         <pos>0.479166666666667 0.84375</pos><!-- 230,270 -->
+         <maxSize>0.270833333333333 0.3125</maxSize><!-- 140,100 -->
+      </image>
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.729166666666667 0.375</pos><!-- 350,120 -->
+         <maxSize>0.672916666666667 0.75625</maxSize><!-- 323,242 -->
+      </video>
+      <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/${system.theme}-gamelist-metadata.png</path>
+      </image>
+   </view>
+
+</theme>

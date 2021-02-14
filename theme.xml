@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:     Solidus
+designer:       
+author:         Anthony Caccese
+license:        creative commons CC-BY-NC-SA
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <variables>
+      <bodyFont>./_inc/fonts/Cabin-Bold.ttf</bodyFont>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+   </variables>
+
+   <view name="system,basic,detailed,video,grid">
+      <helpsystem name="help">
+         <pos>1 1</pos>
+      </helpsystem>
+      <image name="logo">
+         <path>./_inc/systems/${system.theme}.svg</path>
+      </image>
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <zIndex>1</zIndex>
+         <color>000000</color>
+      </image>
+   </view>
+
+   <view name="system">
+      <carousel name="systemcarousel">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <type>horizontal</type>
+         <color>FFFFFF00</color>
+         <size>1 1</size>
+         <logoSize>0.55 0.425</logoSize>
+         <logoScale>1</logoScale>
+         <maxLogoCount>1</maxLogoCount>
+      </carousel>
+      <image name="background-art" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/systems/${system.theme}-system.jpg</path>
+         <tile>false</tile>
+         <zIndex>2</zIndex>
+      </image>
+      <image name="md_divider" extra="true">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.85625</pos>
+         <size>0.166666666666667 0.003125</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <zIndex>4</zIndex>
+         <color>ffffff99</color>
+      </image>
+      <text name="systemInfo">
+         <fontPath>${bodyFont}</fontPath>
+         <pos>0 0.875</pos>
+         <fontSize>0.0375</fontSize>
+         <color>ffffff</color>
+      </text>
+   </view>
+
+   <view name="basic,detailed,video">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.25 0.1375</pos><!-- 120,44 -->
+         <maxSize>0.333333333333333 0.125</maxSize><!-- 160,40 -->
+      </image>
+      <textlist name="gamelist">
+         <origin>0 0</origin>
+         <pos>0.033333333333333 0.25</pos><!-- 16,80 -->
+         <size>0.408333333333333 0.75</size><!-- 196,240 -->
+         <alignment>left</alignment>
+         <lineSpacing>1.8</lineSpacing>
+         <fontSize>0.034375</fontSize>
+         <scrollSound>./_inc/sounds/select.wav</scrollSound>
+         <fontPath>${bodyFont}</fontPath>
+         <horizontalMargin>0.012</horizontalMargin>
+         <selectorColor>ffffff44</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+         <primaryColor>ffffff77</primaryColor>
+         <secondaryColor>ffffff77</secondaryColor>
+      </textlist>
+   </view>
+
+   <view name="detailed,video">
+      <text name="md_lbl_rating,md_lbl_developer,md_developer,md_lbl_publisher,md_publisher,md_lbl_playcount,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description,md_name,md_lbl_gametime,md_gametime">
+         <visible>false</visible>
+         <fontPath>${bodyFont}</fontPath>
+         <alignment>left</alignment>
+         <color>eeeeee</color>
+      </text>
+      <datetime name="md_releasedate,md_lastplayed">
+         <visible>false</visible>
+         <fontPath>${bodyFont}</fontPath>
+         <color>eeeeee</color>
+         <alignment>left</alignment>
+      </datetime>
+      <rating name="md_rating">
+         <visible>false</visible>
+         <fontPath>${bodyFont}</fontPath>
+         <color>eeeeee</color>
+         <alignment>left</alignment>
+      </rating>
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.729166666666667 0.5</pos><!-- 350,130 -->
+         <maxSize>0.416666666666667 0.75</maxSize><!-- 200,240 -->
+      </image>
+      <image name="md-media-mask" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>3</zIndex>
+      </image>
+   </view>
+
+   <view name="video">
+      <image name="md_marquee">
+         <visible>false</visible>
+      </image>
+      <image name="md_image">
+         <visible>false</visible>
+      </image>
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.729166666666667 0.5</pos><!-- 350,160 -->
+         <maxSize>0.889583333333333 1</maxSize><!-- 427,320 -->
+         <delay>0.5</delay>
+         <showSnapshotDelay>true</showSnapshotDelay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <snapshotSource>thumbnail</snapshotSource>
+         <snapshotSource>image</snapshotSource>
+         <zIndex>2</zIndex>
+      </video>
+   </view>
+
+   <view name="menu">
+      <menuText name="menutitle">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.04</fontSize>
+         <color>ffffff</color>
+      </menuText>
+      <menuText name="menufooter">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.0325</fontSize>
+         <color>666666</color>
+      </menuText>
+      <menuText name="menutext">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.04</fontSize>
+         <color>444444</color>
+         <separatorColor>222222</separatorColor>
+         <selectorColor>555555</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+      </menuText>
+      <menuTextSmall name="menutextsmall">
+         <fontPath>${bodyFont}</fontPath>
+         <fontSize>0.03</fontSize>
+         <color>777777</color>
+      </menuTextSmall>
+      <menuBackground name="menubg">
+         <color>111111</color>
+         <cornerSize>20 20</cornerSize>
+      </menuBackground>
+   </view>
+
+   <view name="screen">
+      <text name="clock">
+         <origin>1 0</origin>
+         <pos>0.98 0.034375</pos>
+         <size>0.1666666666666667 0.03125</size>
+         <fontSize>0.03125</fontSize>
+         <alignment>right</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <fontPath>${bodyFont}</fontPath>
+         <color>ffffff55</color>
+      </text>
+      <batteryIndicator name="batteryIndicator">
+         <pos>0.83 0.013</pos><!-- 439.2,4.16 -->
+         <size>0.07 0.07</size><!-- 33.6,22.4 -->
+         <full>./_inc/images/battery-100.svg</full>
+         <at75>./_inc/images/battery-75.svg</at75>
+         <at50>./_inc/images/battery-50.svg</at50>
+         <at25>./_inc/images/battery-25.svg</at25>
+         <empty>./_inc/images/battery-0.svg</empty>
+         <incharge>./_inc/images/battery-charging.svg</incharge>
+         <networkIcon>./_inc/images/wifi.svg</networkIcon>
+         <color>ffffff55</color>
+      </batteryIndicator>
+      <controllerActivity name="controllerActivity">
+         <visible>false</visible>
+      </controllerActivity>
+   </view>
+   
+   <subset name="metadata" displayName="Metadata">
+      <include name="metadata-off" displayName="Off">./_inc/subsets/metadata-off.xml</include>
+      <include name="metadata-on" displayName="On">./_inc/subsets/metadata-on.xml</include>
+   </subset>
+
+</theme>
