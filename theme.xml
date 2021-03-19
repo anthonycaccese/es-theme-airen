@@ -13,7 +13,7 @@ license:        creative commons CC-BY-NC-SA
       <spacerImage>./_inc/images/space.png</spacerImage>
    </variables>
 
-   <view name="system,basic,detailed,video,grid">
+   <view name="system,basic,detailed,video">
       <helpsystem name="help">
          <pos>1 1</pos>
       </helpsystem>
@@ -28,6 +28,15 @@ license:        creative commons CC-BY-NC-SA
          <tile>true</tile>
          <zIndex>1</zIndex>
          <color>000000</color>
+      </image>
+      <image name="top-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 0.09375</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>11111144</color>
+         <zIndex>4</zIndex>
       </image>
    </view>
 
@@ -70,13 +79,13 @@ license:        creative commons CC-BY-NC-SA
    <view name="basic,detailed,video">
       <image name="logo">
          <origin>0.5 0.5</origin>
-         <pos>0.25 0.1375</pos><!-- 120,44 -->
+         <pos>0.25 0.2125</pos><!-- 120,64 -->
          <maxSize>0.333333333333333 0.125</maxSize><!-- 160,40 -->
       </image>
       <textlist name="gamelist">
          <origin>0 0</origin>
-         <pos>0.033333333333333 0.25</pos><!-- 16,80 -->
-         <size>0.408333333333333 0.75</size><!-- 196,240 -->
+         <pos>0.033333333333333 0.33125</pos><!-- 16,106 -->
+         <size>0.408333333333333 0.6875</size><!-- 196,220 -->
          <alignment>left</alignment>
          <lineSpacing>1.8</lineSpacing>
          <fontSize>0.034375</fontSize>
@@ -88,6 +97,23 @@ license:        creative commons CC-BY-NC-SA
          <primaryColor>ffffff77</primaryColor>
          <secondaryColor>ffffff77</secondaryColor>
       </textlist>
+   </view>
+
+   <view name="basic">
+      <image name="logo">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.18</pos>
+      </image>
+      <textlist name="gamelist">
+         <pos>0.05 0.335</pos>
+         <size>0.9 0.64</size>
+         <alignment>center</alignment>
+         <lineSpacing>1.81</lineSpacing>
+         <fontSize>0.04</fontSize>
+      </textlist>
+      <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/${system.theme}-gamelist-basic.jpg</path>
+      </image>
    </view>
 
    <view name="detailed,video">
@@ -145,7 +171,7 @@ license:        creative commons CC-BY-NC-SA
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.04</fontSize>
+         <fontSize>0.034375</fontSize>
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
@@ -155,7 +181,7 @@ license:        creative commons CC-BY-NC-SA
       </menuText>
       <menuText name="menutext">
          <fontPath>${bodyFont}</fontPath>
-         <fontSize>0.04</fontSize>
+         <fontSize>0.036</fontSize>
          <color>444444</color>
          <separatorColor>222222</separatorColor>
          <selectorColor>555555</selectorColor>
@@ -174,18 +200,18 @@ license:        creative commons CC-BY-NC-SA
 
    <view name="screen">
       <text name="clock">
-         <origin>1 0</origin>
-         <pos>0.98 0.034375</pos>
+         <origin>0 0</origin>
+         <pos>0.020833333333333 0.034375</pos>
          <size>0.1666666666666667 0.03125</size>
          <fontSize>0.03125</fontSize>
-         <alignment>right</alignment>
+         <alignment>left</alignment>
          <verticalAlignment>center</verticalAlignment>
          <fontPath>${bodyFont}</fontPath>
-         <color>ffffff55</color>
+         <color>FFFFFF55</color>
       </text>
       <batteryIndicator name="batteryIndicator">
-         <pos>0.83 0.013</pos><!-- 439.2,4.16 -->
-         <size>0.07 0.07</size><!-- 33.6,22.4 -->
+         <pos>0.915 0.013</pos><!-- x=439.2 y=4.16 -->
+         <size>0.07 0.07</size><!-- 33.6 x 22.4 -->
          <full>./_inc/images/battery-100.svg</full>
          <at75>./_inc/images/battery-75.svg</at75>
          <at50>./_inc/images/battery-50.svg</at50>
@@ -193,7 +219,7 @@ license:        creative commons CC-BY-NC-SA
          <empty>./_inc/images/battery-0.svg</empty>
          <incharge>./_inc/images/battery-charging.svg</incharge>
          <networkIcon>./_inc/images/wifi.svg</networkIcon>
-         <color>ffffff55</color>
+         <color>FFFFFF55</color>
       </batteryIndicator>
       <controllerActivity name="controllerActivity">
          <visible>false</visible>
