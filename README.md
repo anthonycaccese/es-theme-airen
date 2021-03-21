@@ -15,9 +15,13 @@ A simple theme for Emulation Station. Built and tested on 351Elec for the RG351P
 
 # Details
 
+hehe
+
 ---
 
 # Configuration Options
+
+hehe
 
 ---
 
