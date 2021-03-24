@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-theme name:     Solidus
-designer:       
+theme name:     Airen
+designer:       Szalik
 author:         Anthony Caccese
 license:        creative commons CC-BY-NC-SA
 -->
@@ -29,13 +29,12 @@ license:        creative commons CC-BY-NC-SA
          <zIndex>1</zIndex>
          <color>000000</color>
       </image>
-      <image name="top-background" extra="true">
-         <origin>0 0</origin>
-         <pos>0 0</pos>
+      <image name="screen-background" extra="true">
+         <origin>1 0</origin>
+         <pos>1 0</pos>
          <size>1 0.09375</size>
          <path>${spacerImage}</path>
          <tile>true</tile>
-         <color>11111144</color>
          <zIndex>4</zIndex>
       </image>
    </view>
@@ -74,18 +73,21 @@ license:        creative commons CC-BY-NC-SA
          <fontSize>0.0375</fontSize>
          <color>ffffff</color>
       </text>
+      <image name="screen-background" extra="true">
+         <color>11111144</color>
+      </image>
    </view>
 
    <view name="basic,detailed,video">
       <image name="logo">
          <origin>0.5 0.5</origin>
-         <pos>0.25 0.2125</pos><!-- 120,64 -->
+         <pos>0.25 0.125</pos><!-- 120,40 -->
          <maxSize>0.333333333333333 0.125</maxSize><!-- 160,40 -->
       </image>
       <textlist name="gamelist">
          <origin>0 0</origin>
-         <pos>0.033333333333333 0.33125</pos><!-- 16,106 -->
-         <size>0.408333333333333 0.6875</size><!-- 196,220 -->
+         <pos>0.033333333333333 0.25</pos><!-- 16,80 -->
+         <size>0.408333333333333 0.75</size><!-- 196,240 -->
          <alignment>left</alignment>
          <lineSpacing>1.8</lineSpacing>
          <fontSize>0.034375</fontSize>
@@ -97,22 +99,27 @@ license:        creative commons CC-BY-NC-SA
          <primaryColor>ffffff77</primaryColor>
          <secondaryColor>ffffff77</secondaryColor>
       </textlist>
+      <image name="screen-background" extra="true">
+         <color>11111144</color>
+      </image>
    </view>
 
    <view name="basic">
       <image name="logo">
          <origin>0.5 0.5</origin>
-         <pos>0.5 0.18</pos>
+         <pos>0.5 0.125</pos>
       </image>
       <textlist name="gamelist">
-         <pos>0.05 0.335</pos>
-         <size>0.9 0.64</size>
+         <pos>0.05 0.25</pos>
+         <size>0.9 0.75</size>
          <alignment>center</alignment>
-         <lineSpacing>1.81</lineSpacing>
-         <fontSize>0.04</fontSize>
+         <lineSpacing>1.8</lineSpacing>
       </textlist>
       <image name="md-media-mask" extra="true">
          <path>./_inc/systems/${system.theme}-gamelist-basic.jpg</path>
+      </image>
+      <image name="screen-background" extra="true">
+         <visible>false</visible>
       </image>
    </view>
 
@@ -144,7 +151,7 @@ license:        creative commons CC-BY-NC-SA
          <origin>0 0</origin>
          <pos>0 0</pos>
          <size>1 1</size>
-         <zIndex>3</zIndex>
+         <zIndex>5</zIndex>
       </image>
    </view>
 
@@ -158,9 +165,9 @@ license:        creative commons CC-BY-NC-SA
       <video name="md_video">
          <origin>0.5 0.5</origin>
          <pos>0.729166666666667 0.5</pos><!-- 350,160 -->
-         <maxSize>0.889583333333333 1</maxSize><!-- 427,320 -->
-         <delay>0.5</delay>
-         <showSnapshotDelay>true</showSnapshotDelay>
+         <maxSize>1.041666666666667 1.171875</maxSize><!-- 500,375 -->
+         <delay>0.1</delay>
+         <showSnapshotDelay>false</showSnapshotDelay>
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <snapshotSource>thumbnail</snapshotSource>
          <snapshotSource>image</snapshotSource>
@@ -199,19 +206,9 @@ license:        creative commons CC-BY-NC-SA
    </view>
 
    <view name="screen">
-      <text name="clock">
-         <origin>0 0</origin>
-         <pos>0.020833333333333 0.034375</pos>
-         <size>0.1666666666666667 0.03125</size>
-         <fontSize>0.03125</fontSize>
-         <alignment>left</alignment>
-         <verticalAlignment>center</verticalAlignment>
-         <fontPath>${bodyFont}</fontPath>
-         <color>FFFFFF55</color>
-      </text>
       <batteryIndicator name="batteryIndicator">
-         <pos>0.915 0.013</pos><!-- x=439.2 y=4.16 -->
-         <size>0.07 0.07</size><!-- 33.6 x 22.4 -->
+         <pos>0.83 0.013</pos><!-- 439.2,4.16 -->
+         <size>0.07 0.07</size><!-- 33.6,22.4 -->
          <full>./_inc/images/battery-100.svg</full>
          <at75>./_inc/images/battery-75.svg</at75>
          <at50>./_inc/images/battery-50.svg</at50>
@@ -224,6 +221,16 @@ license:        creative commons CC-BY-NC-SA
       <controllerActivity name="controllerActivity">
          <visible>false</visible>
       </controllerActivity>
+      <text name="clock">
+         <origin>1 0</origin>
+         <pos>0.98 0.034375</pos>
+         <size>0.1666666666666667 0.03125</size>
+         <fontSize>0.03125</fontSize>
+         <alignment>right</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <fontPath>${bodyFont}</fontPath>
+         <color>FFFFFF55</color>
+      </text>
    </view>
    
    <subset name="metadata" displayName="Metadata">
