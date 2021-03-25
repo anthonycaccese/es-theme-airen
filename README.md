@@ -35,5 +35,5 @@ A simple theme for Emulation Station. Built and tested on 351Elec for the RG351P
 
 # Acknowledgments
 - 351ELEC by fewtarius (https://github.com/fewtarius/351ELEC)
-- Artwork by Szalik (@szalik-rg351)
+- Artwork by Szalik (https://github.com/szalik-rg351)
 - Layout Concept Inspired by LemFliggity
