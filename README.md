@@ -1,32 +1,39 @@
-# Airen Theme for 351ELEC Project
+# Airen Theme for 351ELEC
 
-A simple theme for Emulation Station. Built and tested on 351Elec for the RG351P handheld.
+A simple theme for Emulation Station. Built and tested on 351Elec for the RG351P/M handheld.
 
----
 
-# Preview
+## Preview
 
-![image](https://user-images.githubusercontent.com/77732736/111915482-70e4a380-8a6e-11eb-86da-baa14d808cee.png)
-![image](https://user-images.githubusercontent.com/77732736/111915473-6a562c00-8a6e-11eb-9aba-5d9a03af50b8.png)
-![image](https://user-images.githubusercontent.com/77732736/111915467-632f1e00-8a6e-11eb-81db-c0e852bfe39a.png)
-![image](https://user-images.githubusercontent.com/77732736/111915462-590d1f80-8a6e-11eb-8082-72f351f506f1.png)
+*System View*
 
----
+![System View](https://i.imgur.com/oy85ZUB.png)
 
-# Details
+*Game List*
 
-hehe
+![Gamelist View](https://i.imgur.com/bAHZ3qZ.png)
 
----
+*Game List with metadata on*
 
-# Configuration Options
+![Gamelist View](https://i.imgur.com/06lQPQA.png)
 
-hehe
 
----
+## Details
+
+- Built for 3:2 resolutions (specifically tested on the Anbernic RG351P/M running 351ELEC) 
+- System, basic, detailed and video views are supported
+- Support for "All Games", "Favorites", "Last Played" and "Custom Collections"
+
+
+## Configuration Options
+
+- Metadata: Toggle metadata display for gameslist view under "UI Settings" > "Theme Configuration" > "Metadata"
+  - Options:
+  - [Off] Don't display game metadata
+  - [On] Display the following game metadata - Genre, Rating & Release Date
+
 
 # Acknowledgments
-- 351ELEC by fewtarius - https://github.com/fewtarius/351ELEC
-- Concept Inspired by LemFliggity
-- Some logo graphics are modified from the Carbon theme by Eric Hettervik
-- ChangaOne font by Eduardo Tunni
+- 351ELEC by fewtarius (https://github.com/fewtarius/351ELEC)
+- Artwork by Szalik (@szalik-rg351)
+- Layout Concept Inspired by LemFliggity
