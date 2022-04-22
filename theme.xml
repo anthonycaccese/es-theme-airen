@@ -49,6 +49,7 @@ license:        creative commons CC-BY-NC-SA
          <logoSize>0.55 0.425</logoSize>
          <logoScale>1</logoScale>
          <maxLogoCount>1</maxLogoCount>
+		 <defaultTransition>instant</defaultTransition>
       </carousel>
       <image name="background-art" extra="true">
          <origin>0 0</origin>
