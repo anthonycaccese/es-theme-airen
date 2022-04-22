@@ -65,6 +65,7 @@
          <maxSize>0.416666666666667 0.625</maxSize><!-- 200,200 -->
       </image>
       <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/default/default-gamelist-image.png</path>
          <path>./_inc/systems/backgrounds/${system.theme}-gamelist-image.png</path>
       </image>
    </view>
@@ -94,6 +95,7 @@
          <maxSize>1 1.6</maxSize><!-- 400,300 -->
       </video>
       <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/default/default-gamelist-metadata.png</path>
          <path>./_inc/systems/backgrounds/${system.theme}-gamelist-metadata.png</path>
       </image>
    </view>

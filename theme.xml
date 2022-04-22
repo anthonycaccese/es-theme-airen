@@ -54,6 +54,7 @@ license:        creative commons CC-BY-NC-SA
          <origin>0 0</origin>
          <pos>0 0</pos>
          <size>1 1</size>
+         <path>./_inc/systems/default/default-system.jpg</path>
          <path>./_inc/systems/backgrounds/${system.theme}-system.jpg</path>
          <tile>false</tile>
          <zIndex>2</zIndex>
@@ -116,6 +117,7 @@ license:        creative commons CC-BY-NC-SA
          <lineSpacing>1.8</lineSpacing>
       </textlist>
       <image name="md-media-mask" extra="true">
+         <path>./_inc/systems/default/default-gamelist-basic.jpg</path>
          <path>./_inc/systems/backgrounds/${system.theme}-gamelist-basic.jpg</path>
       </image>
       <image name="screen-background" extra="true">
